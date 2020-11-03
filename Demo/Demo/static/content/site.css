@@ -1,0 +1,376 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*MAPS CSS*/
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+
+#map {
+    height: 300px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #29b5a8;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+    .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+#pac-input {
+    background-color: #fff;
+    font-family: Railway;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#target {
+    width: 345px;
+}
+/*Button css
+*/
+.btn {
+    /*position: relative;*/
+    font-family: "Railway";
+    font-weight: bolder;
+    /*display: block;*/
+    margin: 15px auto;
+    /*padding: 10px;*/
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #29b5a8;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+    .btn:hover, .btn:focus {
+        background-color: #3addce;
+    }
+
+    .btn > * {
+        position: relative;
+    }
+
+    .btn span {
+        display: block;
+        padding: 12px 24px;
+    }
+
+    .btn:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 0;
+        padding-top: 0;
+        border-radius: 100%;
+        background-color: rgba(236, 240, 241, .3);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .btn:active:before {
+        width: 120%;
+        padding-top: 120%;
+        transition: width .2s ease-out, padding-top .2s ease-out;
+    }
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.modalContent {
+    padding: 0 20px 5px 20px;
+}
+
+    .modalContent h3 {
+        font-family: "Railway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+
+        .modalContent h3 span {
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: none;
+            color: #999;
+            display: block;
+            font-weight: 500;
+        }
+
+    .modalContent h5 {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+  
+
+.mini-font {
+    font-size: 11px !important;
+    padding-top: 10px;
+    color: #666;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.order-summary, .event-summary {
+    background-color: #F5F5F5;
+    padding: 15px 10px 2px 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.eventdate, .eventtime, .eventduration {
+    font-weight: bold;
+}
+
+.designcost, .submissioncost, .totalcost, .eventdate, .eventtime, .eventduration, .availablecredit {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: right;
+}
+/************************************ELEMENTS TABS*********************/
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.tabs {
+    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+}
+
+    .tabs [class^="tab"] label,
+    .tabs [class*=" tab"] label {
+        color: #29b5a8;
+        cursor: pointer;
+        display: block;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .tabs [class^="tab"] [type="radio"],
+    .tabs [class*=" tab"] [type="radio"] {
+        border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+        .tabs [class*=" tab"] [type="radio"]:hover,
+        .tabs [class*=" tab"] [type="radio"]:focus {
+            border-bottom: 1px solid #29b5a8;
+        }
+
+        .tabs [class^="tab"] [type="radio"]:checked,
+        .tabs [class*=" tab"] [type="radio"]:checked {
+            border-bottom: 2px solid #29b5a8;
+        }
+
+            .tabs [class^="tab"] [type="radio"]:checked + div,
+            .tabs [class*=" tab"] [type="radio"]:checked + div {
+                opacity: 1;
+            }
+
+        .tabs [class^="tab"] [type="radio"] + div,
+        .tabs [class*=" tab"] [type="radio"] + div {
+            display: block;
+            opacity: 0;
+            padding: 2rem 0;
+            width: 90%;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+    .tabs .tab-2 {
+        width: 20%;
+    }
+
+        .tabs .tab-2 [type="radio"] + div {
+            width: 40%;
+        }
+
+        .tabs .tab-2 [type="radio"]:checked + div {
+        }
+
+        .tabs .tab-2:last-child [type="radio"] + div {
+            margin-left: 20%;
+        }
+
+        .tabs .tab-2:last-child [type="radio"]:checked + div {
+            width: 500px;
+            margin-left: -189%;
+        }
+
+.search_box {
+    width: 86%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/static/images/searchicon.png');
+    background-size: 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+
+.canvas-container {
+    /*background: url(/static/images/Transparent_Background.png);*/
+    background-size: cover;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,835 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row" style="margin-top:20px;" ng-controller="pixelController">
+
+
+    <div class="col-md-6" id="paypal">
+        <!--*************************************FIRST HEADER CATGEORY**********************************-->
+        <div class="row" ng-show="!categoryClicked" style="margin-top: -22px;margin-bottom: 5px;">
+            <h1 class="pitch">Create your own Snapchat filter for any occasion</h1>
+            <div class="category-dropdown">
+                <a ng-click="getCategory('Thanksgiving')" class="categorybtn">Thanksgiving</a>
+
+                <a ng-click="getCategory('Birthday')" class="categorybtn">Birthday</a>
+                <a ng-click="getCategory('Wedding')" class="categorybtn">Wedding</a>
+                <a ng-click="toggleModal('CATEGORIES')" class="categorybtn">More</a>
+            </div>
+        </div>
+        <!--****************************************CATEGORY HEADER****************************************-->
+        <div class="row" ng-show="categoryClicked">
+
+            <!-- CAtegory Header-->
+            <h1 class="category-page"> {%raw%}{{selectedCategory}}{%endraw%}</h1>
+            <div class="category-dropdown-small">
+                <a ng-click="toggleModal('CATEGORIES')" class="categorybtn">
+                    Categories <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z" /></svg>
+                </a>
+            </div>
+            <h2 class="category-page">{%raw%}{{categoryTagline}}{%endraw%}</h2>
+
+        </div>
+
+        <!--****************************************TEMPALATE DIVISION*****************************-->
+        <div class="scrollbar" id="style-2" style="height:535px;overflow: scroll;overflow-x:hidden;">
+            <div class="row " ng-repeat="array in arrayOfArrays">
+                <div class="col-xs-6 col-sm-6 col-md-4 template" ng-repeat="urlObj in array">
+                    <span ng-class=templateprice ng-bind="urlObj.price"></span>
+                    <img class="img-responsive" ng-mouseover="templateprice='template-price'" ng-mouseleave="templateprice='template-price-hidden'" ng-click="addImage(urlObj.canvas,urlObj.price,urlObj.url)" ng-src="{%raw%}{{urlObj.url}}{%endraw%}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**********************************************TOOLS DIVISION*****************************************-->
+    <div class="col-md-1 canvas-options">
+        <div class="row">
+            <div class="col-md-12 options" style="margin-bottom:5px;margin-right:20px;margin-top: -20px;">
+                <h4 style="margin-left: 23px">Insert</h4>
+                <img class="img-responsive toolimage" ng-click="toggleModal('ADD TEXT')" src="/static/images/text.png" />
+            </div>
+        </div>
+
+        <!--************************ADD TEXT TO CANVAS BUTTON-->
+        <div class="row">
+            <div class="col-md-12 options" style="margin-bottom:5px;margin-right:20px">
+
+                <img class="img-responsive toolimage" ng-click="toggleModal('ADD ELEMENT')" src="/static/images/elements.png" />
+            </div>
+        </div>
+        <!--*************************UPLOAD BUTTON-->
+        <div class="row">
+            <div class="col-md-12 options image-upload" style="margin-bottom:5px;margin-right:20px;margin-bottom:-12px;">
+                <label for="imgLoader">
+                    <img class="img-responsive toolimage" src="/static/images/upload.png" />
+                </label>
+                <input type="file" id="imgLoader">
+            </div>
+        </div>
+        <!--****************************EMOJI BUTTON-->
+        <!--<div class="row">
+            <div class="col-md-12 options" style="margin-bottom:5px;margin-right:20px">
+
+                <img class="img-responsive toolimage" ng-click="toggleModal('ADD EMOJI')" src="/static/images/bitmoji.png" />
+            </div>
+        </div>-->
+
+        <!--**************************FONT SELECTION  BUTTON-->
+        <div class="row">
+            <div class="col-md-12 dropdown options" style="margin-bottom:5px;margin-right:20px">
+                <h4 style="margin-left: 28px">Edit</h4>
+                <img class="img-responsive toolimage" src="/static/images/font.png" />
+                <div class="dropdown-content font-list scrollbar" id="style-2">
+                    <p id="font_multicolor" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Multicolor</p>
+                    <p id="font_gilbert" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Gilbert</p>
+                    <p id="font_cookiemonster" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Cookie Monster</p>
+                    <p id="font_sweetsensations" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Sweet Sensations</p>
+                    <p id="font_multicolor" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Multicolor</p>
+                    <p id="font_gilbert" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Gilbert</p>
+                    <p id="font_cookiemonster" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Cookie Monster</p>
+                    <p id="font_sweetsensations" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Sweet Sensations</p>
+                    <p id="font_multicolor" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Multicolor</p>
+                    <p id="font_gilbert" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Gilbert</p>
+                    <p id="font_cookiemonster" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Cookie Monster</p>
+                    <p id="font_sweetsensations" data-ng-click="getFont($event)" data-dismiss="modal" aria-hidden="true">Sweet Sensations</p>
+                </div>
+            </div>
+        </div>
+
+        <!--********************************REMOVE ELEMENT BUTTON-->
+        <div class="row">
+
+            <div class="col-md-12 options" style="margin-bottom:5px;margin-right:20px">
+
+                <img class="img-responsive toolimage" ng-click="toggleModal('REMOVE ELEMENT')" src="/static/images/remove.png" />
+            </div>
+        </div>
+
+        <!--*************************************COLOR VALUE BUTTON-->
+        <div class="row">
+            <div class="col-md-12 toolimage color-icon options" style="margin-bottom: 5px;width: 96px;height: 50px;line-height: 40px;border-radius: 6px;cursor: pointer;text-align: center;margin-left: 9px;margin-bottom: 10px;background-color: rgb(231, 231, 231);border: none;box-shadow: 2px 2px 2px #DDDDDD;">
+                <input id="colorbar" class="jscolor {valueElement:null, value:'000000', onFineChange:'setColor(this)'} jscolor-active" readonly="readonly" style="background-image: none; background-color: black; color: rgb(255, 255, 255);">                <p>Change Color</p>
+            </div>
+        </div>
+        <!--Script to call angular function to change canvas vvalue-->
+        <script>
+            function setColor(color) {
+                angular.element(document.getElementById('colorbar')).scope().setObjectColor(color.toHEXString());
+            }
+        </script>
+
+        <!--**********************************-PREVIEW BUTTON-->
+        <div class="row">
+            <br>
+            <h5 style="margin-top: -16px;margin-left: 22px;">Preview</h5>
+            <div class="col-sm-5">
+                <button type="button" class="btn btn-lg btn-toggle" ng-click="showPreview()" style="margin:6px;" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <div class="handle"></div>
+                </button>
+            </div>
+
+            <br>
+            <a href="https://support.snapchat.com/en-US/a/geofilter-guidelines" target="_blank" style="margin:16px;color: #000; text-decoration: underline">Guidelines</a>
+        </div>
+    </div>
+
+    <!--*********************************************** CANVAS ******************************************************************-->
+    <div class="col-md-4" style="width: 351px; height: 624px; position: relative; user-select: none;">
+
+        <img ng-src="{%raw%}{{canvasBackground}}{%endraw%}" width="351" height="624" style="position: absolute;" />
+
+        <div id="template_loader" ng-show="loading">
+            <img src="/static/images/loading.gif">
+        </div>
+
+        <canvas id="canvas" width="351" height="624" style="position: absolute; width: 351px; height: 624px; left: 0px; top: 0px;"></canvas>
+
+    </div>
+
+
+
+    <!--///////////////// MODAL FOR TEXT-->
+    <modal visible="showModalText">
+
+        <h5 style="text-align: center;color: #29b5a8;margin-top:-15px">(Pick a font style from below)</h5>
+        <div class="row" id="presetfont-list">
+            <p id="font_multicolor" data-ng-click="getText($event)" data-dismiss="modal" aria-hidden="true">Multicolor</p>
+            <p id="font_gilbert" data-ng-click="getText($event)" data-dismiss="modal" aria-hidden="true">Gilbert</p>
+            <p id="font_cookiemonster" data-ng-click="getText($event)" data-dismiss="modal" aria-hidden="true">Cookie Monster</p>
+            <p id="font_sweetsensations" data-ng-click="getText($event)" data-dismiss="modal" aria-hidden="true">Sweet Sensations</p>
+
+        </div>
+    </modal>
+    <!--///////////////// MODAL FOR ELEMENT-->
+    <modal visible="showModalElement">
+
+        <h5 style="text-align: center;color: #29b5a8;margin-top:-15px">(Pick an Element from below)</h5>
+        <div class="row">
+            <div class="col-md-12 scrollbar" id="style-2" style="height:450px;overflow: scroll;overflow-x:hidden">
+
+
+
+                <div class="tabs">
+
+                    <div class="tab-2">
+                        <label for="tab2-1" ng-click="loadElement('Balloons')">Balloons</label>
+                        <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    </div>
+
+                    <div class="tab-2">
+                        <label for="tab2-2" ng-click="loadElement('Banners')">Banners</label>
+                        <input id="tab2-2" name="tabs-two" type="radio">
+
+                    </div>
+                    <div class="tab-2">
+                        <label for="tab2-3" ng-click="loadElement('Numbers')">Numbers</label>
+                        <input id="tab2-3" name="tabs-two" type="radio">
+
+                    </div>
+                    <div class="tab-2">
+                        <label for="tab2-4" ng-click="loadElement('Celebrations')">Celebrations</label>
+                        <input id="tab2-4" name="tabs-two" type="radio">
+
+                    </div>
+                    <div class="tab-2">
+                        <label for="tab2-5" ng-click="loadElement('Decor')">Decor</label>
+                        <input id="tab2-5" name="tabs-two" type="radio">
+
+                    </div>
+                </div>
+
+                <form>
+                    <input type="text" class="search_box" name="search" placeholder="Search.." ng-model="category">
+                    <button class="btn" style="padding: 12px;width: 13%;margin-bottom: 20px;" ng-click="getElementByCat(category)">Search</button>
+                </form>
+
+                <div class="row" ng-if="!noElementFlag" ng-repeat="array in arrayOfElements">
+                    <div class="col-md-4" ng-repeat="url in array">
+                        <img class="img-responsive toolElement" data-ng-click="getElement(url)" data-dismiss="modal" aria-hidden="true" ng-src={%raw%}{{url}}{%endraw%} />
+                    </div>
+                </div>
+
+                <div ng-if="noElementFlag">
+                    Make sure you do not include excessive, sales, or branded alcohol related content in your design. Celebratory content such as toasting glasses, or a bottle of wine that does not include any branding is OK.
+
+                </div>
+
+            </div>
+        </div>
+
+    </modal>
+
+    <!--///////////////// MODAL FOR CATEGORIES-->
+    <modal visible="showModalCategory">
+
+        <h5 style="text-align: center;color: #29b5a8;margin-top:-15px">(Pick a Category from below)</h5>
+        <div class="row">
+            <div class="col-md-12 scrollbar" id="style-2" style="height:450px;overflow: scroll;overflow-x:hidden;">
+
+                <div class="row" ng-repeat="cat in categories">
+                    <p id="font_multicolor" data-ng-click="getCategory(cat)" data-dismiss="modal" aria-hidden="true">{%raw%}{{cat}}{%endraw%} </p>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <!------------------------------------------CHECKOUT POPUP BUTTON-->
+    <div class="col-md-1 next-icon popupbtn">
+
+        <label for="popup">
+            <img src="/static/images/next.png" alt="Checkout" class="gonext" ng-click="setPreviewFilter()">
+        </label>
+        <input id="popup" data-popup-open="popup-1" href="#">
+
+    </div>
+
+
+
+
+
+    <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+            <div class="scrollbar" id="style-2" style="overflow: scroll;overflow-x:hidden;height: 558px;margin-bottom:-8px;background-color:white;">
+                <ol class="progress-track">
+                    <li ng-class=LocationClass>
+                        <center>
+                            <div class="icon-wrap">
+                                <svg class="icon-state icon-check-mark">
+                                    <use xlink:href="#icon-check-mark"></use>
+                                </svg>
+
+                                <svg class="icon-state icon-down-arrow">
+                                    <use xlink:href="#icon-down-arrow"></use>
+                                </svg>
+                            </div>
+                            <span class="progress-text">Event Location</span>
+                        </center>
+                    </li>
+
+                    <li ng-class=DetailClass>
+                        <center>
+                            <div class="icon-wrap">
+                                <svg class="icon-state icon-check-mark">
+                                    <use xlink:href="#icon-check-mark"></use>
+                                </svg>
+
+                                <svg class="icon-state icon-down-arrow">
+                                    <use xlink:href="#icon-down-arrow"></use>
+                                </svg>
+                            </div>
+                            <span class="progress-text">Event Details</span>
+                        </center>
+                    </li>
+
+                    <li ng-class=SubmitClass>
+                        <center>
+                            <div class="icon-wrap">
+                                <svg class="icon-state icon-check-mark">
+                                    <use xlink:href="#icon-check-mark"></use>
+                                </svg>
+
+                                <svg class="icon-state icon-down-arrow">
+                                    <use xlink:href="#icon-down-arrow"></use>
+                                </svg>
+                            </div>
+                            <span class="progress-text">Pay & Submit</span>
+                        </center>
+                    </li>
+
+
+                </ol>
+
+                <!--*******************************************MAP*******************************************************************-->
+
+                <div ng-show="!DetailsSetFlag">
+
+                    <input ng-show="!LocationSetFlag" id="pac-input" class="pac-controls" type="text" placeholder="Enter a location">
+
+                    <div id="map"></div>
+                </div>
+
+                <!--*******************************************MAP ENDS*******************************************************************-->
+
+
+                <div ng-show="LocationSetFlag && !DetailsSetFlag">
+                    <div class="row modalContent">
+                        <div class="col-md-5">
+
+                            <h3>
+                                VENUE SIZE
+                                <span>
+                                    Drag the pin and place it on top of your venue.
+                                    <br>Choose venue size to make sure the green circle covers it.
+                                </span>
+                            </h3>
+                        </div>
+
+                        <div class="col-md-7">
+                            <!--<md-select ng-model="venueSize" required="required" class="md-no-underline form-control" ng-change="updateCircle(venueSize)">
+                                <md-option value="25000" selected="selected">25000</md-option>
+                                <md-option value="50000">50000</md-option>
+                                <md-option value="100000">100000</md-option>
+                                <md-option value="250000">250000</md-option>
+                                <md-option value="500000">500000</md-option>
+                                <md-option value="1000000">1000000</md-option>
+                            </md-select>-->
+                            <div class="rangeslider-wrap">
+                                <input ng-model="venueSize" type="range" min="25000" max="1000000" step="25000" labels="25000, 50000, 100000, 250000, 500000, 1000000">
+                            </div>
+
+                            <script>
+        $('input[type="range"]').rangeslider({
+            // Feature detection the default is `true`.
+            // Set this to `false` if you want to use
+            // the polyfill also in Browsers which support
+            // the native <input type="range"> element.
+            polyfill: false,
+
+            // Default CSS classes
+            rangeClass: 'rangeslider',
+            disabledClass: 'rangeslider--disabled',
+            horizontalClass: 'rangeslider--horizontal',
+            fillClass: 'rangeslider__fill',
+            handleClass: 'rangeslider__handle',
+
+            // Callback function
+            onInit: function () {
+                $rangeEl = this.$range;
+                // add value label to handle
+                var $handle = $rangeEl.find('.rangeslider__handle');
+                var handleValue = '<div class="rangeslider__handle__value">' + this.value + '</div>';
+                $handle.append(handleValue);
+
+                // get range index labels
+                var rangeLabels = this.$element.attr('labels');
+                rangeLabels = rangeLabels.split(', ');
+
+                // add labels
+                $rangeEl.append('<div class="rangeslider__labels"></div>');
+                $(rangeLabels).each(function (index, value) {
+                    $rangeEl.find('.rangeslider__labels').append('<span class="rangeslider__labels__label">' + value + '</span>');
+                })
+            },
+
+            // Callback function
+            onSlide: function (position, value) {
+                var $handle = this.$range.find('.rangeslider__handle__value');
+                $handle.text(this.value);
+            },
+
+            // Callback function
+            onSlideEnd: function (position, value) { }
+        });
+
+                            </script>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row modalContent">
+
+                        <div class="col-sm-4">
+
+                            <h3>
+                                EVENT TIME
+
+                            </h3>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-sm-2">
+                            <md-content style="width:500px">
+
+                                <div>
+                                    <md-datepicker  ng-model="dateObj"  md-placeholder="Enter date"  md-min-date="minDate"></md-datepicker>
+                                    
+                                </div>
+                            </md-content>
+
+                        </div>
+                        <div class="col-sm-3" style="margin-top: -13px;">
+
+                            <md-content style="width:500px">
+
+                                <div>
+                                    <md-time-picker ng-model="eventtime" message="message" mandatory="required"   ></md-time-picker>
+                                </div>
+                            </md-content>
+                        </div>
+                        <div class="col-sm-2" style="margin-top: -3px;">
+                            <md-select ng-model="duration" placeholder="Duration" style="margin: 0px;" class="md-no-underline form-control">
+                                <md-option value="" disabled="" selected="">Duration</md-option>
+                                <md-option value="Two">2 Hours</md-option>
+                                <md-option value="Four">4 Hours</md-option>
+                                <md-option value="Six">6 Hours</md-option>
+                                <md-option value="Twelve">12 Hours</md-option>
+                                <md-option value="Day">24 Hours</md-option>
+                                <md-option value="TwoDays">48 Hours</md-option>
+                                <md-option value="Week">1 Week</md-option>
+                                <md-option value="Month">1 Month</md-option>
+                            </md-select>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row modalContent">
+
+                        <div class="col-sm-4">
+
+                            <h3>
+                                GEOFILTER TYPE
+                            </h3>
+                        </div>
+
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7">
+                            <md-select ng-model="geofilterType" placeholder="Select" class="md-no-underline form-control">
+                                <md-option value="Personal">Personal</md-option>
+                                <md-option value="Business">Business</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+
+
+                    <div class="row modalContent">
+
+                        <div class="col-sm-4">
+
+                            <h3>
+                                SNAPCHAT ACTIVATION FEES
+                            </h3>
+                        </div>
+
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7">
+                            <input class="form-control" type="text" value="$15" disabled />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ////////////////////////////////////////// Submit Page /////////////////////////////////////////////////////// -->
+                <div ng-show="DetailsSetFlag" class="row modalContent">
+                    <div class="col-sm-1"></div>
+                    <div class="modalContent col-md-4"  style="text-align:center;">
+                    
+                        
+                        <h3 style="margin-top: 20px" align="center">PREVIEW FILTER</h3>
+                        <div id="image_for_crop" class="col-sm-6 col-sm-offset-3" style="padding:0px;margin-top: 8px;width: 216px;height: 384px;background-color: #f5f5f5;">
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6 modalContent">
+                        <div class="row">
+
+                            <div class="col-sm-12" align="center">
+                                <h3>ORDER SUMMARY</h3>
+                                <div class="event-summary">
+                                    <h5>Start Date: <span class="eventdate">{%raw%}{{eventdate}}{%endraw%}</span></h5>
+                                    <h5>Start Time: <span class="eventtime">{%raw%}{{eventtimeForDB}}{%endraw%}</span></h5>
+                                    <h5>Duration: <span class="eventduration">{%raw%}{{duration}}{%endraw%}</span></h5>
+                                    <h5>Venue: <span class="eventduration">{%raw%}{{location}}{%endraw%}</span></h5>
+                                </div>
+                                <h3>COST</h3>
+                                <div class="order-summary">
+                                    <h5>Geofilter Design: <span class="designcost">US ${%raw%}{{price |number:2}}{%endraw%}</span></h5>
+                                    <h5>Snapchat Activation: <span class="submissioncost">US $15.00</span></h5>
+                                    <hr>
+                                    <h5 style="font-weight: 700">Total: <span class="totalcost">US ${%raw%}{{15+price |number:2}}{%endraw%}</span></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <p class="mini-font" style="margin-bottom: 15px;">By making a purchase you agree to our <a href="http://swipestudio.co/refund-policy" target="_blank" style="text-decoration: underline">Refund &amp; Cancellation Policy</a></p>
+
+                            <md-content>
+                                <div>
+                                    <md-input-container class="col-md-12">
+                                        <label>Email</label>
+                                        <input required ng-model="email" type="email">
+                                    </md-input-container>
+                                </div>
+                            </md-content>
+
+                        </div>
+                        <div class="row">
+                            <p class="mini-font" style="margin-bottom: 15px;">Please pay with PayPal to activate on snapchat</p>
+
+                            <div class="col-sm-12" style="text-align:center">
+                               <!-- <div >Activate on Snapchat</div>-->
+                                <div   ng-click="setSubmitClass(10001)" id="paypal-button-container"></div>
+                                <script>
+
+                            paypal.Button.render({
+
+                                // Set your environment
+
+                                env: 'sandbox', // sandbox | production
+
+                                // Specify the style of the button
+
+                                //style: {
+                                //    label: 'checkout',  // checkout | credit | pay | buynow | generic
+                                //    size: 'responsive', // small | medium | large | responsive
+                                //    shape: 'pill',   // pill | rect
+                                //    color: 'gold'   // gold | blue | silver | black
+                                //},
+
+
+                                style: {
+                                    size: 'responsive',
+                                    color: 'gold',
+                                    shape: 'rect',
+                                    label: 'paypal',
+                                    tagline: 'false'
+
+                                },
+
+
+                                // PayPal Client IDs - replace with your own
+                                // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+
+                                client: {
+                                    sandbox: 'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+                                    production: '<insert production client id>'
+                                },
+
+                                // Wait for the PayPal button to be clicked
+
+                                payment: function (data, actions) {
+                                    return actions.payment.create({
+                                        payment: {
+                                            transactions: [
+                                                {
+                                                    amount: { total: '0.01', currency: 'USD' }
+                                                }
+                                            ]
+                                        }
+                                    });
+                                },
+
+                                // Wait for the payment to be authorized by the customer
+
+                                onAuthorize: function (data, actions) {
+                                    return actions.payment.execute().then(function (response) {
+                                        var el = document.querySelector('#paypal');
+                                        $el = angular.element(el);
+                                        $scope = $el.scope();
+
+                                        $scope.sendResp(response.id);
+                                    });
+                                }
+
+                            }, '#paypal-button-container');
+
+                                </script>
+
+
+                            </div>
+                            <div class="col-sm-12 btn">
+                                <div ng-click="backDetailClass()">
+                                    Back
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="row" style="text-align:center;margin-bottom: -44px;">
+
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6 btn" ng-if="!LocationSetFlag">
+                            <div ng-click="setLocationClass()">
+                                Set Location
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                    <!-- <button class="btn" type="button" ></button>-->
+
+
+                    <div class="row">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-7">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-md-4 btn" ng-if="LocationSetFlag && !DetailsSetFlag">
+                                    <div ng-click="setDetailClass()">
+                                        Set Details
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-md-4 btn" ng-if="LocationSetFlag && !DetailsSetFlag">
+                                    <div ng-click="backLocationClass()">
+                                        Back to Set Location
+                                    </div>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<button class="btn" ng-if="LocationSetFlag && !DetailsSetFlag" ng-click="setDetailClass()">Set Details</button>-->
+                    <!--<button class="btn" ng-if="LocationSetFlag && !DetailsSetFlag" ng-click="backLocationClass()">Back to Set Location</button>-->
+                    <!--<button class="btn" ng-if="DetailsSetFlag" ng-click="setSubmitClass(location,eventdate,email)">Pay & Submit </button>
+
+
+
+                    <button class="btn" ng-if="DetailsSetFlag" ng-click="backDetailClass()">Back to Detail</button>-->
+
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+
+                        <a class="col-md-6 btn" style="text-decoration-color:white" data-popup-close="popup-1" href="#">Close</a>
+
+                        <div class="col-sm-3"></div>
+                    </div>
+
+                </div>
+
+                <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    /**------------------------------------------------------------------------------------MAPS-----------*/
+    var myVar;
+  
+    var map;
+    function initialize() {
+        myVar = setTimeout(5000);
+        var latlng = new google.maps.LatLng(28.5355161, 77.39102649999995);
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: latlng,
+            zoom: 13
+        });
+        var marker = new google.maps.Marker({
+            map: map,
+            position: latlng,
+            icon: '/static/images/dragme.png',
+            draggable: true
+        });
+        var input = document.getElementById('pac-input');
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        var geocoder = new google.maps.Geocoder();
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+        var infowindow = new google.maps.InfoWindow();
+        autocomplete.addListener('place_changed', function () {
+            infowindow.close();
+            marker.setVisible(false);
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                window.alert("Autocomplete's returned place contains no geometry");
+                return;
+            }
+
+            // If the place has a geometry, then present it on a map.
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(17);
+            }
+
+            marker.setPosition(place.geometry.location);
+            marker.setVisible(true);
+
+            // Add circle overlay and bind to marker
+            circle = new google.maps.Circle({
+                map: map,
+                //   radius: 1609,    // 10 miles in metres
+                radius: 25000 * 0.092903,
+                fillColor: '#AA0000'
+            });
+
+
+
+
+
+            infowindow.setContent(place.formatted_address);
+            infowindow.open(map, marker);
+            circle.bindTo('center', marker, 'position');
+            google.maps.event.trigger(map, 'resize');
+            bindDataToForm(place.formatted_address);
+        });
+        // this function will work on marker move event into map
+        google.maps.event.addListener(marker, 'dragend', function () {
+            geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[0]) {
+
+                        // Add circle overlay and bind to marker
+                        circle = new google.maps.Circle({
+                            map: map,
+                            // radius: 1609,    // 10 miles in metres
+                            radius: 25000 * 0.092903,
+                            fillColor: '#AA0000'
+                        });
+                        circle.bindTo('center', marker, 'position');
+
+                        bindDataToForm(results[0].formatted_address, marker.getPosition().lat(), marker.getPosition().lng());
+                        infowindow.setContent(results[0].formatted_address);
+                        infowindow.open(map, marker);
+                    }
+                }
+            });
+        });
+    }
+    function bindDataToForm(address) {
+
+
+        var appElement = document.querySelector('[ng-app=pixel]');
+        var $scope = angular.element(appElement).scope();
+        $scope.$apply(function () {
+            $scope.location = address;
+
+        });
+    }
+    //  google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    window.onload = function () {
+
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+
+        var dropZone = document.getElementById("canvas");
+        dropZone.addEventListener("dragenter", handleDragEnter, false);
+        dropZone.addEventListener("dragover", handleDragOver, false);
+        dropZone.addEventListener("drop", handleDrop, false);
+        //
+        function handleDragEnter(e) { e.stopPropagation(); e.preventDefault(); }
+        //
+        function handleDragOver(e) { e.stopPropagation(); e.preventDefault(); }
+        //
+        function handleDrop(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            //
+            var url = e.dataTransfer.getData('text/plain');
+            // for img elements, url is the img src so
+            // create an Image Object & draw to canvas
+            if (url) {
+                var img = new Image();
+                img.onload = function () { ctx.drawImage(this, 0, 0); }
+                img.src = url;
+                // for img file(s), read the file & draw to canvas
+            } else {
+                handleFiles(e.dataTransfer.files);
+            }
+        }
+        // read & create an image from the image file
+        function handleFiles(files) {
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                var imageType = /image.*/;
+                if (!file.type.match(imageType)) { continue; }
+                var img = document.createElement("img");
+                img.classList.add("obj");
+                img.file = file;
+                var reader = new FileReader();
+                reader.onload = (function (aImg) {
+                    return function (e) {
+                        aImg.onload = function () {
+                            ctx.drawImage(aImg, 0, 0);
+                        }
+                        // e.target.result is a dataURL for the image
+                        aImg.src = e.target.result;
+                    };
+                })(img);
+                reader.readAsDataURL(file);
+            } // end for
+        } // end handleFiles
+    };
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAju6U8o886LLpr4apSArDqCXG571UzbVY&libraries=places&callback=initialize"
+        async defer></script>
+
+
+
+
+
+
+
+
+
+{% endblock %}

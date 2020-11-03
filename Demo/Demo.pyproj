@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f6dc9cc5-e142-47b5-8c47-943120cb5b2b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>Demo</Name>
+    <RootNamespace>Demo</RootNamespace>
+    <InterpreterId>{19342749-8f41-40cf-90f0-b08346c51a9e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Demo\api.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demo\database.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="Demo\__init__.py" />
+    <Compile Include="Demo\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Demo\" />
+    <Folder Include="Demo\static\" />
+    <Folder Include="Demo\static\content\" />
+    <Folder Include="Demo\static\content\font-awesome-4.7.0\" />
+    <Folder Include="Demo\static\content\font-awesome-4.7.0\css\" />
+    <Folder Include="Demo\static\content\font-awesome-4.7.0\fonts\" />
+    <Folder Include="Demo\static\content\font-awesome-4.7.0\less\" />
+    <Folder Include="Demo\static\content\font-awesome-4.7.0\scss\" />
+    <Folder Include="Demo\static\content\datepicker\" />
+    <Folder Include="Demo\static\fonts\" />
+    <Folder Include="Demo\static\fonts\codropsicons\" />
+    <Folder Include="Demo\static\fonts\icomoon\" />
+    <Folder Include="Demo\static\fonts\text\" />
+    <Folder Include="Demo\static\images\" />
+    <Folder Include="Demo\static\images\Elements\Balloons\" />
+    <Folder Include="Demo\static\images\Elements\Banners\" />
+    <Folder Include="Demo\static\images\Elements\cat\" />
+    <Folder Include="Demo\static\images\Elements\Celebrations\" />
+    <Folder Include="Demo\static\images\Elements\Decor\" />
+    <Folder Include="Demo\static\images\Elements\dog\" />
+    <Folder Include="Demo\static\images\Elements\Numbers\" />
+    <Folder Include="Demo\static\images\filterImages\" />
+    <Folder Include="Demo\static\images\Elements\" />
+    <Folder Include="Demo\static\images\templates\" />
+    <Folder Include="Demo\static\images\templates\Birthday\" />
+    <Folder Include="Demo\static\images\templates\Babyshower\" />
+    <Folder Include="Demo\static\images\templates\Bachelorette\" />
+    <Folder Include="Demo\static\images\templates\Christmas\" />
+    <Folder Include="Demo\static\images\templates\BridalShower\" />
+    <Folder Include="Demo\static\images\templates\Celebration\" />
+    <Folder Include="Demo\static\images\templates\Business\" />
+    <Folder Include="Demo\static\images\templates\College\" />
+    <Folder Include="Demo\static\images\templates\Kids\" />
+    <Folder Include="Demo\static\images\templates\Generic\" />
+    <Folder Include="Demo\static\images\templates\Newyear\" />
+    <Folder Include="Demo\static\images\templates\Wedding\" />
+    <Folder Include="Demo\static\images\templates\Thanksgiving\" />
+    <Folder Include="Demo\static\js\" />
+    <Folder Include="Demo\static\js\angular\" />
+    <Folder Include="Demo\static\js\angular\controllers\" />
+    <Folder Include="Demo\static\js\angular\directives\" />
+    <Folder Include="Demo\static\js\angular\filters\" />
+    <Folder Include="Demo\static\js\angular\services\" />
+    <Folder Include="Demo\static\scripts\" />
+    <Folder Include="Demo\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Demo\static\content\bootstrap.min.css" />
+    <Content Include="Demo\static\content\component.css" />
+    <Content Include="Demo\static\content\cuppa-datepicker-styles.css" />
+    <Content Include="Demo\static\content\datepicker\default.css" />
+    <Content Include="Demo\static\content\datepicker\default.date.css" />
+    <Content Include="Demo\static\content\datepicker\default.time.css" />
+    <Content Include="Demo\static\content\datepicker\rtl.css" />
+    <Content Include="Demo\static\fonts\.DS_Store" />
+    <Content Include="Demo\static\fonts\codropsicons\.DS_Store" />
+    <Content Include="Demo\static\fonts\codropsicons\codropsicons.eot" />
+    <Content Include="Demo\static\fonts\codropsicons\codropsicons.svg" />
+    <Content Include="Demo\static\fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="Demo\static\fonts\codropsicons\codropsicons.woff" />
+    <Content Include="Demo\static\fonts\codropsicons\license.txt" />
+    <Content Include="Demo\static\fonts\icomoon\icomoon.dev.svg" />
+    <Content Include="Demo\static\fonts\icomoon\icomoon.eot" />
+    <Content Include="Demo\static\fonts\icomoon\icomoon.svg" />
+    <Content Include="Demo\static\fonts\icomoon\icomoon.ttf" />
+    <Content Include="Demo\static\fonts\icomoon\icomoon.woff" />
+    <Content Include="Demo\static\fonts\icomoon\license.txt" />
+    <Content Include="Demo\static\images\dragme.png" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Demo\static\content\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Demo\static\content\font-awesome.css" />
+    <Content Include="Demo\static\content\fonts.css" />
+    <Content Include="Demo\static\content\fontstyle.css" />
+    <Content Include="Demo\static\content\rangeslider.css" />
+    <Content Include="Demo\static\content\style.css" />
+    <Content Include="Demo\static\fonts\text\CookieMonster.ttf" />
+    <Content Include="Demo\static\fonts\text\Gilbert.otf" />
+    <Content Include="Demo\static\fonts\text\Multicolore.otf" />
+    <Content Include="Demo\static\fonts\text\Multicolore.otf" />
+    <Content Include="Demo\static\fonts\text\Raleway-Regular.ttf" />
+    <Content Include="Demo\static\fonts\text\Raleway-Thin.ttf" />
+    <Content Include="Demo\static\fonts\text\SweetSensations.ttf" />
+    <Content Include="Demo\static\images\bitmoji.png" />
+    <Content Include="Demo\static\images\Capture.PNG" />
+    <Content Include="Demo\static\images\Checkered.svg" />
+    <Content Include="Demo\static\images\elements.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons01.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons02.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons03.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons04.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons05.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons06.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons07.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons08.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons09.png" />
+    <Content Include="Demo\static\images\Elements\Balloons\numberedballoons10.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner25.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner26.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner27.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner28.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner29.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner30.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner31.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner32.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner33.png" />
+    <Content Include="Demo\static\images\Elements\Banners\banner34.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat0.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat1.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat2.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat3" />
+    <Content Include="Demo\static\images\Elements\cat\cat3.jpg" />
+    <Content Include="Demo\static\images\Elements\cat\cat3.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat4.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat5.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat6.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat7.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat8" />
+    <Content Include="Demo\static\images\Elements\cat\cat8.png" />
+    <Content Include="Demo\static\images\Elements\cat\cat9.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\cake6.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\drink1.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\food1.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\food2.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\gift5.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\icecream1.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\icecream2.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\wine1.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\wine2.png" />
+    <Content Include="Demo\static\images\Elements\Celebrations\wineglass2.png" />
+    <Content Include="Demo\static\images\Elements\Decor\case1.png" />
+    <Content Include="Demo\static\images\Elements\Decor\case2.png" />
+    <Content Include="Demo\static\images\Elements\Decor\cycle1.png" />
+    <Content Include="Demo\static\images\Elements\Decor\decor7.png" />
+    <Content Include="Demo\static\images\Elements\Decor\decor8.png" />
+    <Content Include="Demo\static\images\Elements\Decor\decor9.png" />
+    <Content Include="Demo\static\images\Elements\Decor\hat5.png" />
+    <Content Include="Demo\static\images\Elements\Decor\hotballoon1.png" />
+    <Content Include="Demo\static\images\Elements\Decor\hotballoon2.png" />
+    <Content Include="Demo\static\images\Elements\Decor\shoe1.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog0.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog1.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog2.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog3.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog4.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog5.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog6.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog7.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog8.png" />
+    <Content Include="Demo\static\images\Elements\dog\dog9.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers01.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers02.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers03.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers04.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers05.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers06.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers07.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers08.png" />
+    <Content Include="Demo\static\images\Elements\Numbers\numbers09.png" />
+    <Content Include="Demo\static\images\filterImages\filter1.png" />
+    <Content Include="Demo\static\images\filterImages\filter2.png" />
+    <Content Include="Demo\static\images\filterImages\filter3.png" />
+    <Content Include="Demo\static\images\font.png" />
+    <Content Include="Demo\static\images\icon.png" />
+    <Content Include="Demo\static\images\loading.gif" />
+    <Content Include="Demo\static\images\next.png" />
+    <Content Include="Demo\static\images\range.JPG" />
+    <Content Include="Demo\static\images\remove.png" />
+    <Content Include="Demo\static\images\searchicon.png" />
+    <Content Include="Demo\static\images\templates\Birthday\R0.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R1.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R2.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R3.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R4.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R5.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R6.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R7.jpg" />
+    <Content Include="Demo\static\images\templates\Birthday\R8.jpg" />
+    <Content Include="Demo\static\images\templates\R1.jpg" />
+    <Content Include="Demo\static\images\templates\R2.jpg" />
+    <Content Include="Demo\static\images\templates\R3.jpg" />
+    <Content Include="Demo\static\images\templates\R4.jpg" />
+    <Content Include="Demo\static\images\templates\R5.jpg" />
+    <Content Include="Demo\static\images\templates\R6.jpg" />
+    <Content Include="Demo\static\images\templates\R7.jpg" />
+    <Content Include="Demo\static\images\templates\R8.jpg" />
+    <Content Include="Demo\static\images\templates\R9.jpg" />
+    <Content Include="Demo\static\images\templates\scratch.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R0.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R1.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R2.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R3.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R4.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R5.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R6.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R7.jpg" />
+    <Content Include="Demo\static\images\templates\Thanksgiving\R8.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R0.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R1.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R2.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R3.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R4.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R5.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R6.jpg" />
+    <Content Include="Demo\static\images\templates\Wedding\R7.jpg" />
+    <Content Include="Demo\static\images\text.png" />
+    <Content Include="Demo\static\images\Transparent_Background.png" />
+    <Content Include="Demo\static\images\upload.png" />
+    <Content Include="Demo\static\js\angular\angular-sanitize.min.js" />
+    <Content Include="Demo\static\js\angular\angular.min.js" />
+    <Content Include="Demo\static\js\angular\app.js" />
+    <Content Include="Demo\static\js\angular\controllers\pixelcontroller.js" />
+    <Content Include="Demo\static\js\angular\directives\toolDirective.js" />
+    <Content Include="Demo\static\js\angular\services\pixelservice.js" />
+    <Content Include="Demo\static\scripts\bootstrap.js" />
+    <Content Include="Demo\static\scripts\bootstrap.min.js" />
+    <Content Include="Demo\static\scripts\classie.js" />
+    <Content Include="Demo\static\scripts\fabric.js" />
+    <Content Include="Demo\static\scripts\fontfaceobserver.js" />
+    <Content Include="Demo\static\scripts\jscolor.js" />
+    <None Include="Demo\static\scripts\_references.js" />
+    <Content Include="Demo\static\scripts\legacy.js" />
+    <Content Include="Demo\static\scripts\moment.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Demo\static\scripts\picker.date.js" />
+    <Content Include="Demo\static\scripts\picker.js" />
+    <Content Include="Demo\static\scripts\picker.time.js" />
+    <Content Include="Demo\static\scripts\rangeslider.js" />
+    <Content Include="Demo\static\scripts\rangeslider.min.js" />
+    <Content Include="Demo\static\scripts\respond.js" />
+    <Content Include="Demo\static\scripts\respond.min.js" />
+    <Content Include="Demo\static\scripts\uisearch.js" />
+    <Content Include="requirements.txt" />
+    <Content Include="Demo\static\content\bootstrap.css" />
+    <Content Include="Demo\static\content\site.css" />
+    <Content Include="Demo\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Demo\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Demo\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Demo\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Demo\static\scripts\jquery-1.10.2.js" />
+    <Content Include="Demo\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="Demo\templates\about.html" />
+    <Content Include="Demo\templates\contact.html" />
+    <Content Include="Demo\templates\index.html" />
+    <Content Include="Demo\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{19342749-8f41-40cf-90f0-b08346c51a9e}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

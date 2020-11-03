@@ -1,0 +1,204 @@
+C:\Users\gopark2\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\attach_server.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\__init__.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\__main__.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\bin\AzureSetup.cfg
+C:\Users\gopark2\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\gopark2\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\gopark2\Source\Repos\pixel\Demo\bin\wfastcgi.py
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\web.config
+C:\Users\gopark2\Source\Repos\pixel\Demo\obj\Debug\web.debug.config
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\attach_server.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\__init__.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\__main__.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\bin\AzureSetup.cfg
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\bin\wfastcgi.py
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\web.config
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\pixel1\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixel1\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixel1\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixel1\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixel1\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixel1\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixel1\Demo\obj\Debug\web.debug.config
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\attach_server.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\__init__.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\__main__.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\bin\AzureSetup.cfg
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\bin\wfastcgi.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\ptvs_virtualenv_proxy.py
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\web.config
+C:\Users\Anuj Grover\Source\Repos\pixel\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\PixelDemo\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\PixelDemo\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\PixelDemo\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\PixelDemo\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\PixelDemo\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\PixelDemo\Demo\obj\Debug\web.debug.config
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\attach_server.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\__init__.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\__main__.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\bin\AzureSetup.cfg
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\bin\wfastcgi.py
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\web.config
+C:\Users\pvnrlz\Source\Repos\pixel\Demo\obj\Debug\web.debug.config
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\attach_server.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\__init__.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\__main__.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\bin\AzureSetup.cfg
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\bin\wfastcgi.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\ptvs_virtualenv_proxy.py
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\web.config
+C:\Users\anuj.grover\Source\Repos\pixel2\Demo\obj\Debug\web.debug.config
+C:\Users\gopark2\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\attach_server.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\__init__.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\__main__.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\bin\AzureSetup.cfg
+C:\Users\gopark2\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\gopark2\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\gopark2\Source\Repos\pixel2\Demo\bin\wfastcgi.py
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\web.config
+C:\Users\gopark2\Source\Repos\pixel2\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixel2\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixel2\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixel2\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixel2\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixel2\Demo\obj\Debug\web.debug.config
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\Anuj Grover\Source\Repos\pixel2\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel3\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixel3\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixel3\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixel3\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixel3\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixel3\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixel3\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixel\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixel\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixel\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixel\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixel\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\pixel4\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixel4\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixel4\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixel4\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixel4\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixel4\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixel4\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\demo\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\demo\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\demo\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\demo\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\demo\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\demo\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\demo\Demo\obj\Debug\web.debug.config
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\attach_server.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\visualstudio_py_debugger.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\visualstudio_py_repl.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\visualstudio_py_util.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\__init__.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\__main__.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\bin\AzureSetup.cfg
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\bin\wfastcgi.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\deployment-updated-orig-prefix.txt
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\ptvs_virtualenv_proxy.py
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\web.config
+C:\Users\HR\Source\Repos\pixelwithpayment\Demo\obj\Debug\web.debug.config
